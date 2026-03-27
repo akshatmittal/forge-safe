@@ -1,6 +1,6 @@
 {
   "name": "forge-safe",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "Build Safe Wallet batch transactions using Foundry scripting",
   "type": "module",
   "bin": {
@@ -38,14 +38,14 @@
   },
   "author": "Akshat Mittal <hi@akshatmittal.com>",
   "license": "MIT",
-  "packageManager": "pnpm@10.30.0",
+  "packageManager": "pnpm@10.33.0",
   "devDependencies": {
-    "@changesets/changelog-github": "^0.5.2",
-    "@changesets/cli": "^2.29.8",
-    "@changesets/config": "^3.1.2",
-    "@types/node": "^24.10.13",
+    "@changesets/changelog-github": "^0.6.0",
+    "@changesets/cli": "^2.30.0",
+    "@changesets/config": "^3.1.3",
+    "@types/node": "^24.12.0",
     "prettier": "^3.8.1",
-    "tsdown": "^0.20.3",
+    "tsdown": "^0.21.6",
     "typescript": "^5.9.3"
   },
   "publishConfig": {
