@@ -1,0 +1,54 @@
+{
+  "name": "forge-safe",
+  "version": "0.1.0",
+  "description": "Build Safe Wallet batch transactions using Foundry scripting",
+  "type": "module",
+  "bin": {
+    "forge-safe": "./dist/cli.mjs"
+  },
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.mts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "changeset publish",
+    "format": "prettier --write \"**/*.{ts,tsx,md,json}\""
+  },
+  "keywords": [
+    "forge",
+    "foundry",
+    "solidity",
+    "safe"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akshatmittal/forge-safe.git"
+  },
+  "author": "Akshat Mittal <hi@akshatmittal.com>",
+  "license": "MIT",
+  "packageManager": "pnpm@10.30.0",
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.2",
+    "@changesets/cli": "^2.29.8",
+    "@changesets/config": "^3.1.2",
+    "@types/node": "^24.10.13",
+    "prettier": "^3.8.1",
+    "tsdown": "^0.20.3",
+    "typescript": "^5.9.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
